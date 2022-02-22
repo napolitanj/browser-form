@@ -1,0 +1,28 @@
+<!Doctype HTML>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Browser Forms</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer=""></script>
+</head>
+
+<body>
+    <form action="storeInfo" class="mainForm" id="mainForm">
+        <label for="email">Email:</label>
+        <input id="email" type="email" required>
+        <label for="county">Country:</label>
+        <input id="country" type="text" required>
+        <label for="zip">Zip Code:</label>
+        <input id="zip" type="text" pattern="(\d{5}([\-]\d{4})?)" title="12345 or 12345-6789" required>
+        <label for="password">Password:</label>
+        <input id="password" type="password" pattern=".{8,16}" title="8-16 characters in length" required>
+        <label for="passConfirm">Confirm Password:</label>
+        <input id="passConfirm" type="password" required>
+        <button id="submit">Submit</button>
+    </form>
+</body>
+
+</html>
